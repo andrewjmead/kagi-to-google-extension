@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "Kagi to Google",
+    "version": "1.0",
+    "description": "Use Ctrl+G or Command+G to switch from a Kagi SERP to a Google SERP",
+    "permissions": ["commands", "activeTab"],
+    "commands": {
+        "redirect_to_google": {
+            "suggested_key": {
+                "default": "Ctrl+G",
+                "mac": "Command+G"
+            },
+            "description": "Redirect from Kagi to Google"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
